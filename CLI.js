@@ -8,7 +8,7 @@ var cardType = process.argv[2];
 var cardTypeType = process.argv[3];
 
 // Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-var brokenCloze = new ClozeCard("This doesn't work", "oops");
+// var brokenCloze = new ClozeCard("This doesn't work", "oops");
 
 if (cardType === "basic") {
 

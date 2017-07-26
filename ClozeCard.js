@@ -1,18 +1,29 @@
-var ClozeCard = function(cloze, partial, fullText){
+var ClozeCard = function(cloze, text){
 
+	this.text = text;
+	this.cloze = cloze;
 
-var billOfRightsCloze = new ClozeCard(
-    "What is the first ten amendments to the Constitution", "Bill of Rights");
+	var billOfRightsCloze = new ClozeCard("Bill of Rights", "Bill of Rights is the first ten amendments to the Constitution");
 
-// "George Washington"
-console.log(billOfRightsCloze.cloze); 
-
-// " ... was the first president of the United States.""
-console.log(billOfRightsCloze.partial);
-
-// "George Washington was the first president of the United States.""
-console.log(billOfRightsCloze.fullText);
+	if (clozeCard === false) {
+		throw "text shall include " + text;
+	}
 
 }
 
+ClozeCard.prototype.clozeCard = function () {
+	if (this.text.includes === cloze) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+ClozeCard.prototype.partialText = function () {
+	if (this.text.includes === text) {
+		return this.text.replace(cloze, "...")
+	}
+}
+
 module.exports = ClozeCard;
+
