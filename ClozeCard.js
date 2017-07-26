@@ -20,8 +20,10 @@ ClozeCard.prototype.clozeCard = function () {
 }
 
 ClozeCard.prototype.partialText = function () {
-	if (this.text.includes === text) {
-		return this.text.replace(cloze, "...")
+	if (this.text.includes !=== text) {
+		return false;
+	} else {
+		this.text.replace(cloze, "...");
 	}
 }
 
